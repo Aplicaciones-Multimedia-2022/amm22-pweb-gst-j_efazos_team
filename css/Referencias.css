@@ -1,0 +1,66 @@
+
+*{
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+h1.titulo{
+    font-family: 'SF Distant Galaxy', sans-serif;
+    font-style: italic;
+    src: url('http://fonts.cdnfonts.com/css/sf-distant-galaxy');
+    font-size: 50px;
+
+    text-align: center;
+    color: rgb(249, 247, 247);
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.R {
+    margin-top: 20px;
+    margin-left: 90px; 
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.texto {
+    color: rgb(213, 213, 213);
+    /* margin-left: 20px; */
+    margin-top: 50px;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+
+body {
+    cursor: default;
+    padding: 5%; /*Para que el contenido no esté totalmente pegado a la esquina*/
+    background-image: url("Fondos/pi.webp");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+
+.volverAtras {
+    background-color: rgb(184, 179, 179);
+    border-width: 3px;
+    border-color: black;
+    font-family: 'SF Distant Galaxy', sans-serif;
+    cursor: url(Cursor/guante2.png),pointer;
+    position: absolute;
+    margin-top: 30px;
+    right: 605px;
+    font-size: 20px;
+}
+
+
+.volverAtras:hover {
+    background-color: rgb(255, 255, 255);
+    border-width: 3px;
+    border-color: black;
+    font-size: 21px;
+    font-family: 'SF Distant Galaxy', sans-serif;
+    cursor: url(Cursor/guante2.png),pointer;
+}

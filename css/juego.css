@@ -1,0 +1,99 @@
+
+
+#micanvas {  /*Todos los elementos de la clase .tab tendrán estas características*/
+    /*Ver la diapositiva 19 del pdf de CSS para ver los tipos de selectores*/
+
+	margin: 0 auto;
+	display: block;
+	border: 10px solid #280346;
+
+}
+
+@font-face {
+	font-family: 'SF Distant Galaxy', sans-serif;
+	font-family: 'SF Distant Galaxy AltOutline', sans-serif;
+	font-family: 'SF Distant Galaxy Alternate', sans-serif;
+	font-family: 'SF Distant Galaxy Outline', sans-serif;
+	font-family: 'SF Distant Galaxy Symbols', sans-serif;
+	src: url('http://fonts.cdnfonts.com/css/sf-distant-galaxy');
+}
+
+*{
+	cursor: url(Cursor/guante1.png),pointer;
+}
+
+#micanvas {
+	margin-top: 30px;
+}
+
+.volverAtras{
+	background-color: rgb(184, 179, 179);
+	margin-left: 600px;
+	border-width: 3px;
+	border-color: black;
+	color:black;
+	font-size: 20px;
+	font-family: 'SF Distant Galaxy', sans-serif;
+	cursor: url(Cursor/guante2.png),pointer;
+}
+
+.volverAtras:hover {
+	background-color: rgb(246, 246, 246);
+	border-width: 3px;
+	border-color: black;
+	color:black;
+	font-size: 21px;
+	font-family: 'SF Distant Galaxy', sans-serif;
+	cursor: url(Cursor/guante2.png),pointer;
+}
+
+.volverAtras#miboton, .volverAtras#miboton2 {
+	margin-left: 30px;
+}
+
+.pause{
+	background-color: rgb(184, 179, 179);
+	margin-left: 30px;
+	border-width: 3px;
+	border-color: black;
+	color:black;
+	font-size: 20px;
+	font-family: 'SF Distant Galaxy', sans-serif;
+	cursor: url(Cursor/guante2.png),pointer;
+}
+
+.pause:hover {
+	background-color: rgb(246, 246, 246);
+	border-width: 3px;
+	border-color: black;
+	color:black;
+	font-size: 21px;
+	font-family: 'SF Distant Galaxy', sans-serif;
+	cursor: url(Cursor/guante2.png),pointer;
+}
+
+.pause-menu{
+	background-color: rgb(184, 179, 179);
+	border-width: 3px;
+	border-color: black;
+	color:black;
+	font-size: 20px;
+	font-family: 'SF Distant Galaxy', sans-serif;
+	cursor: url(Cursor/guante2.png),pointer;
+}
+
+.pause-menu:hover {
+	background-color: rgb(246, 246, 246);
+	border-width: 3px;
+	border-color: black;
+	color:black;
+	font-size: 21px;
+	font-family: 'SF Distant Galaxy', sans-serif;
+	cursor: url(Cursor/guante2.png),pointer;
+}
+
+body {
+    background-color: #959cbe;
+    background-size: 100% 100%;
+	cursor: url(Cursor/guante1.png),pointer;
+}

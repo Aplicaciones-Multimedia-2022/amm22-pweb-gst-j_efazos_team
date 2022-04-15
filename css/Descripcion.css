@@ -1,0 +1,411 @@
+
+* { /*En primer lugar damos unas dimensiones generales a nuestra htmk*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Smooch Sans', sans-serif;
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+
+h1 {
+    font-family: 'SF Distant Galaxy', sans-serif;
+    font-style: italic;
+    src: url('http://fonts.cdnfonts.com/css/sf-distant-galaxy');
+    font-size: 40px;
+    margin-left: 20px;
+    color: rgb(242, 237, 237);
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.descripcion{
+    color: rgb(213, 213, 213);
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.descripcionInicial {
+    font-family: 'SF Distant Galaxy', sans-serif;
+    font-style: italic;
+    src: url('http://fonts.cdnfonts.com/css/sf-distant-galaxy');
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 252, 252);
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.D1 {
+    position: absolute;
+    right: 1117px;
+    top: 400px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.teclaD1 {
+    position: absolute;
+    right: 920px;
+    top: 415px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.S1 {
+    position: absolute;
+    right: 1117px;
+    top: 500px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.teclaS1 {
+    position: absolute;
+    right: 920px;
+    top: 515px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.flechas1 {
+    position: absolute;
+    right: 510px;
+    top: 350px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.izquierda1 {
+    position: absolute;
+    right: 650px;
+    top: 480px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(255, 134, 237);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.FlechaIzquierda1 {
+    position: absolute;
+    right: 650px;
+    top: 505px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.FlechaIzquierda1_2 {
+    position: absolute;
+    right: 648px;
+    top: 525px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.derecha1 {
+    position: absolute;
+    right: 370px;
+    top: 480px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(134, 185, 255);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.FlechaDerecha1 {
+    position: absolute;
+    right: 355px;
+    top: 505px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.espacio1 {
+    position: absolute;
+    right: 100px;
+    top: 405px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.Espacio1 {
+    position: absolute;
+    right: 125px;
+    top: 480px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.flechas2, .flechas3 {
+    position: absolute;
+    right: 750px;
+    top: 325px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.arriba2 {
+    position: absolute;
+    right: 758px;
+    top: 460px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(255, 134, 237);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.arriba2_2 {
+    position: absolute;
+    right: 670px;
+    top: 480px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.arriba2_3 {
+    position: absolute;
+    right: 670px;
+    top: 500px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.arriba2_4 {
+    position: absolute;
+    right: 655px;
+    top: 520px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.arriba2_5 {
+    position: absolute;
+    right: 740px;
+    top: 540px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(134, 185, 255);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.espacio2 {
+    position: absolute;
+    right: 300px;
+    top: 380px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.Espacio2 {
+    position: absolute;
+    right: 230px;
+    top: 460px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.Espacio2_2 {
+    position: absolute;
+    right: 340px;
+    top: 480px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.flechas {
+    position: absolute;
+    right: 732px;
+    top: 460px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(255, 134, 237);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.flechas3_2 {
+    position: absolute;
+    right: 690px;
+    top: 480px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.flechas3_3 {
+    position: absolute;
+    right: 705px;
+    top: 500px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.flechas3_4 {
+    position: absolute;
+    right: 705px;
+    top: 520px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.flechas3_4 {
+    position: absolute;
+    right: 705px;
+    top: 520px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.flechas3_5 {
+    position: absolute;
+    right: 800px;
+    top: 540px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.D3 {
+    position: absolute;
+    right: 393px;
+    top: 370px; 
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.teclaD3{
+    position: absolute;
+    right: 200px;
+    top: 390px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.S3 {
+    position: absolute;
+    right: 393px;
+    top: 460px; 
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.teclaS3 {
+    position: absolute;
+    right: 200px;
+    top: 480px;
+    font-family: 'SF Distant Galaxy', sans-serif; ;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.nivel1, .nivel2, .nivel3 {
+    color: rgb(213, 213, 213);
+    margin-left: 20px;
+    font-family: 'SF Distant Galaxy', sans-serif;
+    font-size: 18px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+body {
+	padding: 5%; /*Para que el contenido no esté totalmente pegado a la esquina*/
+    background-image: url("Fondos/pi.webp");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.menu {
+	display: flex; /**/
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.menu p {
+	margin-right: 2rem; /*A cada elemento del menú le ponemos un margen a la derecha*/
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.content {
+	margin-top: 2rem;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+[data-content] {
+	display: none; /*Escondemos todos los elementos que sean tengan "data-content*/
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.active[data-content] { /*Los elementos que tengan la clase active y ademas sean de "data-content* tendrán display de tipo block*/
+	display: block;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.volverAtras {
+    background-color: rgb(184, 179, 179);
+    border-width: 3px;
+    border-color: black;
+    font-size: 20px;
+    font-family: 'SF Distant Galaxy', sans-serif;
+    cursor: url(Cursor/guante2.png),pointer;
+}
+
+.volverAtras {
+    position: absolute;
+    top: 230px;
+    right: 200px;
+    font-size: 20px;
+    cursor: url(Cursor/guante2.png),pointer;
+}
+
+.volverAtras:hover {
+    background-color: rgb(255, 255, 255);
+    border-width: 3px;
+    border-color: black;
+    font-size: 21px;
+    font-family: 'SF Distant Galaxy', sans-serif;
+    cursor: url(Cursor/guante2.png),pointer;
+}
+
+.nivel1:hover{
+    color:rgb(255, 134, 237);
+    font-size: 20px;
+    cursor: url(Cursor/guante2.png),pointer;
+}
+
+.nivel2:hover{
+    color:rgb(255, 134, 237);
+    font-size: 20px;
+    cursor: url(Cursor/guante2.png),pointer;
+}
+
+.nivel3:hover{
+    color:rgb(255, 134, 237);
+    font-size: 20px;
+    cursor: url(Cursor/guante2.png),pointer;
+}
+

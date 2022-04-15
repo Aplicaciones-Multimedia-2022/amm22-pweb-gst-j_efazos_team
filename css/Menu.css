@@ -1,0 +1,26 @@
+
+body {
+    background-image: url("Fondos/hola.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+a{
+    cursor: url(Cursor/guante2.png),pointer; 
+    transition: background-color .5s;
+}
+
+.botones{
+	width :100px;
+	height: 100px;
+    margin-top: 430px;
+    margin-left: 80px;
+	float: left;
+    justify-content:  center;
+    font-size: 40;
+    text-align: center;
+}
+
+
+
