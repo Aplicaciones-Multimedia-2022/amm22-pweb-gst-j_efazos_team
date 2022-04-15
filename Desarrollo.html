@@ -1,0 +1,138 @@
+
+<html>
+
+    <head>
+        <link href="css/Desarrollo.css" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.cdnfonts.com/css/sf-distant-galaxy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Raleway:wght@200&family=Smooch+Sans&family=Staatliches&family=Syne+Mono&display=swap" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Raleway:wght@200&family=Smooch+Sans&family=Syne+Mono&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 class="titulo">Desarrollo del videojuego</h1>
+
+        <div class="menu">
+            <p data-target="#resumen" class="resumen">Resumen</p>
+            <p data-target="#planificacion" class="planificacion">Planificación</p>
+            <p data-target="#problemas" class="problemas">Problemas</p>
+            <p data-target="#tecnicas" class="tecnicas">Técnicas</p>
+            <p data-target="#puntosFuertes" class="puntosFuertes">Puntos Fuertes</p>
+        </div>
+
+        <div class="content">
+
+            <div data-content id="resumen" class="active">
+                <h1>Resumen del desarrollo del videojuego</h1>
+                <p class="contenidoResumen">
+                    <br>
+                    Para el desarrollo del videojuego nos planificamos de la siguiente forma:
+                    Primeramente estuvimos pensando en varias ideas hasta que conseguimos dar con una
+                    que nos encajó a todos, que ha sido la que finalmente hemos desarrollado.
+                    Comenzamos haciendo los botones del menú principal y enlazando los diferentes archivos .html
+                    correspondientes, aunque no ha sido hasta que hemos tenido el juego implementado cuando hemos
+                    programado el css y el html asociado a cada botón. Cuando teníamos lo básico de la página hecho,
+                    nos dispusimos a comenzar con el videojuego, empezamos haciendo el nivel 1, después el nivel 2 y
+                    por último el nivel 3. Para terminar, las dos últimas semanas las dedicamos a corregir los
+                    errores que quedaban y a dejar finalizada la página web.
+                </p>
+            </div>
+
+            <div data-content id="planificacion">
+                <h1>Planificación inicial y real</h1>
+                <p class="contenidoPlanificacion">
+                    <p class="plan">La idea era empezar haciendo la página web y una vez la tuviésemos
+                        hecha, o al menos casi hecha, empezar con el videojuego. Pensábamos dedicarle un par
+                        de semanas a la realización de la web con html y css, buscar todas las imágenes que
+                        íbamos a incluir y enlazar todas los archivos html entre sí. Después de esas dos
+                        semanas empezaríamos con el videojuego y entre todos haríamos los 3 niveles, que incialmente
+                        iban a ser los 3 niveles de plataformas (como el nivel 1). Le dedicaríamos una semana o semana
+                        y media a la programación de cada nivel.
+                    </p>
+                    <br>
+                    <p class="plan">La realidad fue distinta: sí que empezamos haciendo la web, pero
+                        nos dimos cuenta de que realmente no necesitábamos tanto tiempo para hacerla, así
+                        que decidimos empezar directamente con el juego. Habíamos hecho lo básico de la web (botones,
+                        fondo...). Cuando empezamos con el videojuego decidimos que no íbamos a hacer los 3
+                        juntos los niveles porque perderíamos tiempo, así que mientras Samuel y Pablo se
+                        encargaban del nivel 1, Alba y Lorena se encargaban del nivel 2. Programar los niveles
+                        nos llevó un par de semanas más de las que pensábamos, los dejamos acabados dos semanas
+                        antes de la entrega. Como quedaban dos semanas y nos faltaba un nivel por hacer, decidimos
+                        cambiar la organización: Alba y Lorena se ocuparon de la página web y Samuel y Pablo de
+                        programar el nivel 3. No nos ajustamos muy bien a los tiempos que nos habíamos marcado, pero
+                        conseguimos acabarlo a tiempo.
+                    </p>
+                </p>
+            </div>
+
+            <div data-content id="problemas">
+                <h1>Problemas con los que nos encontramos</h1>
+                <p class="contenidoProblemas">
+                    <p class="plan">
+                    Como era de esperar, tanto en la programación del juego como de la página web, nos surgieron
+                    varios problemas. Una vez hecha la web, quisimos ordenar todos los ficheros tanto css como las
+                    imágenes y los sonidos agrupándolos en carpetas. Sin embargo, no nos funcionaba la ruta, pero
+                    finalmente conseguimos arreglarlo con el uso de las rutas relativas.
+                    </p>
+                    <br>
+                    <p class="plan">
+                    Respecto a la programación del juego, también nos hemos encontrado una serie de problemas,
+                    por ejemplo, en el nivel 2, cuando la nave pasaba por encima o por debajo de un meteorito,
+                    se perdía una vida aunque no llegará a chocar con él. Esto lo solucionamos poniendo 'alerts' para
+                    saber en qué momento exacto la nave perdía la vida, y así pudimos cambiar las condiciones para que
+                    solo ocurriese en el momemento en el que chocábamos con el meteorito.
+                    </p>
+                    <br>
+                    <p class="plan">
+                    Finalmente, en el nivel 3, cuando se reiniciaba el juego, el nivel entraba en bucle porque la posición inicial
+                    de Iron Man coincidía con la de uno de los meteoritos, y se detectaba la colisión continuamente, no dejaba seguir
+                    jugando. Lo que hicimos fue cambiar la posición inicial de Iron Man, así no entraba en bucle.
+                    </p>
+                </p>
+            </div>
+
+            <div data-content id="tecnicas">
+                <h1>Técnicas y tecnologías empleadas</h1>
+                <p class="contenidoTecnicas">
+                    <br>
+                    Hemos usado Visual Studio y Atom para programar el css,html y JavaScript del videojuego.
+                    También hemos usado paint para editar y recortar algunas fotos.
+                </p>
+            </div>
+
+            <div data-content id="puntosFuertes">
+                <h1>Puntos fuertes del proyecto</h1>
+                <p class="contenidoPuntosFuertes">
+                    <br>
+                    Creemos que los puntos fuertes de nuestro proyecto: en primer lugar, hemos conseguido hacer
+                    tres niveles y todos distintos, lo cual hace que el juego sea variado. La página web ha conllevado
+                    bastante esfuerzo para poder cuadrar todo y estamos bastante contentos con el resultado. Pero sobre
+                    todo creemos que es bastante original, y eso es lo que lo hace diferente.
+                </p>
+            </div>
+
+        </div>
+
+
+        <input type="button" class="volverAtras" id="volverAtras" value="Atrás" onclick="history.back()">
+
+        <script>
+
+            const targets = document.querySelectorAll('[data-target]')
+            const content = document.querySelectorAll('[data-content]')
+
+            targets.forEach(target => {
+                target.addEventListener('click', () => {
+                    content.forEach(c => {
+                        c.classList.remove('active')
+                    })
+                    const t = document.querySelector(target.dataset.target)
+                    t.classList.add('active')
+                })
+            })
+
+        </script>
+
+
+    </body>
+
+</html>

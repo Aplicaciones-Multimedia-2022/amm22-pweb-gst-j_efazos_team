@@ -1,0 +1,63 @@
+
+<html>
+
+<head meta charset="utf-8">
+	<title> Formulario de contacto </title>
+	<link href="css/Contacto.css" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.cdnfonts.com/css/sf-distant-galaxy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Raleway:wght@200&family=Smooch+Sans&family=Staatliches&family=Syne+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Raleway:wght@200&family=Smooch+Sans&family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+
+
+<body bgcolor=#FEE4E3 meta charset="utf-8">
+<H1> Formulario de contacto </H1>
+<form meta charset="utf-8" autocomplete="off">
+	<table class="table1" width="55%" align="center" border="0" cellspacing="0" cellpadding="0">
+	<tr><td>
+	<fieldset>
+	<legend class="legend"> Datos personales </legend>
+	<p for="Nombre"> Nombre: <input type="text" id="Nombre" placeholder="Escribe tu nombre"> </p>
+	<p for="Email"> Direcci&oacuten de correo electr&oacutenico: <input type="email" id="Email" 
+		placeholder="ejemplo@gmail.com"> </p>
+	</fieldset>
+	</td></tr>
+	</table>
+	
+    
+	
+	<table class="table2" width="55%" align="center" border="0" cellspacing="0" cellpadding="0">
+	<tr><td>
+	<fieldset>
+	<legend class="legend"> Motivo por el que contacta </legend>
+	<p for="Consulta"> Por favor escriba su motivo en varias lineas: </p>
+	<p><textarea id="Consulta" rows="10" cols="40" placeholder="Escribe aqu&iacute tu motivo"></textarea></p>
+	</fieldset>
+	</td></tr>
+	</table>
+	
+	<br>
+	<input type="submit" class="botonCorreo" id="botonCorreo" value="Enviar formulario" >
+</form>
+
+<input type="button" class="volverAtras" id="volverAtras" value="Atrás" onclick="history.back()">
+
+<script>
+	const botonEnviar = document.getElementById('botonCorreo');
+	botonEnviar.addEventListener('click',function(e){
+	
+		e.preventDefault(); //Prevenir que se actualice la página
+	
+		const nombre = document.getElementById('Nombre').value;
+		const correo = document.getElementById('Email').value;
+		const mensaje = document.getElementById('Consulta').value;
+	
+		window.location.href = `mailto:100429249@alumnos.uc3m.es?subject=Formulario%20de%20contacto&body=
+		Nombre%3A%20${nombre}%0ACorreo%20electr%C3%B3nico%3A%20${correo}%0AMotivo%20por%20el%20que%20
+		contacta%3A%20${mensaje}`;
+	
+	});
+</script>
+
+</body>
+</html>

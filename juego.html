@@ -1,0 +1,33 @@
+<html>
+
+    <head>
+      <link href="css/juego.css" rel="stylesheet" type="text/css" />
+      <link href="http://fonts.cdnfonts.com/css/sf-distant-galaxy" rel="stylesheet">
+
+    </head>
+    
+    <body>
+
+      <audio src="Sonidos/musica_baja.mp3" id="musica" loop="true"></audio>
+	    <!--<input type="button" class="volverAtras" id="volverAtras" value="Atrás" onclick="history.back()">-->
+      <input type="button" class="volverAtras" id="volverAtras" value="Atrás" onclick="history.go(-2)">
+      <input type="button" class="pause" id="botonPause" value="Pausar" onclick="pausa()">
+
+      <button id="miboton" class="volverAtras">Activar Musica</button>
+      <button id="miboton2" class="volverAtras">Parar Musica</button>
+
+      <div id="intro" style="display: none;">
+        <input type="button" id="intro" class="pause-menu" value="reanudar" onclick="reanudar()">
+        <input type="button" class="pause-menu" value="reiniciar" onclick="reiniciar()">
+      </div>
+
+
+      <canvas id="micanvas" width="1500" height="750">
+
+      </canvas>
+
+
+    </body>
+
+</html>
+<script type="text/javascript" src="javaScript/juego.js"></script>

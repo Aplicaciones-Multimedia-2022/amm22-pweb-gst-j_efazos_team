@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Descripción</title>
+
+	<link rel="stylesheet" href="css/Descripcion.css">
+    <link href="http://fonts.cdnfonts.com/css/sf-distant-galaxy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Raleway:wght@200&family=Smooch+Sans&family=Staatliches&family=Syne+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Raleway:wght@200&family=Smooch+Sans&family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <p class="descripcionInicial">Descripción por niveles:</p>
+    <br>
+    <br>
+	<div class="menu">
+		<p data-target="#nivel1" class="nivel1">Nivel 1</p>
+		<p data-target="#nivel2" class="nivel2">Nivel 2</p>
+		<p data-target="#nivel3" class="nivel3">Nivel 3</p>
+	</div>
+
+	<div class="content">
+
+		<div data-content id="nivel1" class="active">
+			<h1>Nivel 1</h1>
+			<p class="descripcion">
+                <br>
+				El primer nivel consiste en superar todas las plataformas derrotando a los dos alienígenas
+                y salvando al hermano y los amigos de thor. Por último habrá, que derrotar a la enemiga suprema, Hela.
+                Salvar a los 3 personajes y derrotar a los 3 enemigos son requisitos indispensables para poder
+                pasar al siguiente nivel.
+                <br><br>
+                Con respecto a los controles, son los siguientes:
+			</p>
+            <br>
+            <img src="Controles\D.png" class="D1" width="100" height="100"/>
+            <p class="teclaD1">Para disparar <br> hacia la <br> derecha</p>
+
+            <img src="Controles\S.png" class="S1" width="100" height="100"/>
+            <p class="teclaS1">Para disparar <br> hacia la <br> izquierda</p>
+
+			<img src="Controles\flechas.png" class="flechas1" width="200" height="200"/>
+			<p class="izquierda1"> Flecha izquierda </p>
+            <p class="FlechaIzquierda1"> Para moverse </p>
+			<p class="FlechaIzquierda1_2"> Hacia la izquierda </p>
+			<p class="derecha1"> Flecha derecha </p>
+			<p class="FlechaDerecha1"> Para moverse <br> hacia la derecha </p>
+
+			<img src="Controles\espacio.png" class="espacio1" width="200" height="100"/>
+            <p class="Espacio1">Para saltar</p>
+
+
+		</div>
+
+		<div data-content id="nivel2">
+			<h1>Nivel 2</h1>
+			<p class="descripcion">
+                <br>
+				El segundo nivel cambia la dinámica por completo, ahora hay que conseguir esquivar todos
+				los meteoritos sin ser destruido por las naves enemigas. Para conseguir pasar al tercer y
+				último nivel hay que salvar a cuatro guardianes de la galaxia y disparar a todas las naves
+				enemigas antes de que ellas te disparen a ti.
+                <br><br>
+                Con respecto a los controles, son los siguientes:
+			</p>
+            <br>
+
+			<img src="Controles\flechas.png" class="flechas2" width="200" height="200"/>
+			<p class="arriba2"> Flecha arriba</p>
+			<p class="arriba2_2">Para que la nave se mueva </p>
+			<p class="arriba2_3">hacia arriba. No hace falta </p>
+			<p class="arriba2_4">la flecha hacia abajo porque </p>
+			<p class="arriba2_5">la nave baja sola </p>
+
+			<img src="Controles\espacio.png" class="espacio2" width="200" height="100"/>
+            <p class="Espacio2">Para disparar a las naves</p>
+			<p class="Espacio2_2">enemigas</p>
+
+
+		</div>
+
+		<div data-content id="nivel3">
+			<h1>Nivel 3</h1>
+
+			<p class="descripcion">
+                <br>
+				En el tercer y último nivel hay que tratar de derrotar a Thanos, el peor de los
+				villanos, pero antes de poder dispararle, !Hay que conseguir recolectar las 3 gemas del
+				infinito que están dispersas en el espacio! Después podrás quitarle las 3 vidas a Thanos.
+				Pero cuidado con los meteoritos, podrían quitarle vidas a nuestro personaje. 
+				Si consigues derrotar a Thanos sin chocarte ningún meteorito serás el ganador del juego,
+				¡Enhorabuena!
+                <br><br>
+                Con respecto a los controles, son los siguientes:
+			</p>
+            <br>
+
+			<img src="Controles\flechas.png" class="flechas3" width="200" height="200"/>
+			<p class="flechas"> Todas las flechas</p>
+			<p class="flechas3_2">Podremos usar todas las </p>
+			<p class="flechas3_3">flechas para mover al </p>
+			<p class="flechas3_4">personaje en cualquier </p>
+			<p class="flechas3_5">dirección </p>
+
+			<img src="Controles\D.png" class="D3" width="100" height="100"/>
+            <p class="teclaD3">Para disparar <br> hacia la <br> derecha </p>
+
+			<img src="Controles\S.png" class="S3" width="100" height="100"/>
+            <p class="teclaS3">Para disparar <br> hacia la <br> izquierda</p>
+
+		</div>
+
+	</div>
+
+	<input type="button" class="volverAtras" id="volverAtras" value="Atrás" onclick="history.back()">
+
+    <script>
+
+        const targets = document.querySelectorAll('[data-target]')
+        const content = document.querySelectorAll('[data-content]')
+
+        targets.forEach(target => {
+	        target.addEventListener('click', () => {
+		        content.forEach(c => {
+			        c.classList.remove('active')
+		        })
+	        	const t = document.querySelector(target.dataset.target)
+		        t.classList.add('active')
+	        })
+        })
+
+    </script>
+
+
+
+</body>
+
+
+</html>
