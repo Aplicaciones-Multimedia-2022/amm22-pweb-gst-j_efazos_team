@@ -584,11 +584,13 @@ function listenerPulsaTecla() {
          case 37: //El superhéroe se mueve hacia la IZQUIERDA
             if (superheroe1.x > 0)
                superheroe1.x -= 15;
+               thor.src = "Personajes/thor2.png"
 
             break;
          case 39: //El superhéroe se mueve hacia la DERECHA
             if (superheroe1.x < 1400) {
                superheroe1.x += 15;
+               thor.src = "Personajes/thor.png"
             }
 
             break;
