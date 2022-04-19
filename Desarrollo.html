@@ -23,7 +23,7 @@
         <div class="content">
 
             <div data-content id="resumen" class="active">
-                <h1>Resumen del desarrollo del videojuego</h1>
+                <h1 id="tituloResumen">Resumen del desarrollo del videojuego</h1>
                 <p class="contenidoResumen">
                     <br>
                     Para el desarrollo del videojuego nos planificamos de la siguiente forma:
@@ -134,21 +134,67 @@
                         $(document).ready(function(){
 
                             $("#volverAtras").mouseenter(function(){
-                                 $(this).css("background-color", "blue");
+                                 $(this).css("background-color", "red");
                             });
 
                             $("#volverAtras").mouseleave(function(){
-                                 $(this).css("background-color", "white");
+                                 $(this).css("background-color", "grey");
                             });
+
+
 
 
                             $("#resumen").mouseenter(function(){
-                                    $("#tituloResumen").css("text-align", "center");
+                                    $("h1").css("text-align", "center");
                             });
 
                             $("#resumen").mouseleave(function(){
-                                 $("#tituloResumen").css("text-align", "left");
+                                 $("h1").css("text-align", "left");
                             });
+
+
+
+
+                            $("#planificacion").mouseenter(function(){
+                                    $("h1").css("text-align", "center");
+                            });
+
+                            $("#planificacion").mouseleave(function(){
+                                 $("h1").css("text-align", "left");
+                            });
+
+
+                            $("#problemas").mouseenter(function(){
+                                    $("h1").css("text-align", "center");
+                            });
+
+                            $("#problemas").mouseleave(function(){
+                                 $("h1").css("text-align", "left");
+                            });
+
+
+
+
+                            $("#tecnicas").mouseenter(function(){
+                                    $("h1").css("text-align", "center");
+                            });
+
+                            $("#tecnicas").mouseleave(function(){
+                                 $("h1").css("text-align", "left");
+                            });
+
+                            $("#puntosFuertes").mouseenter(function(){
+                                    $("h1").css("text-align", "center");
+                            });
+
+                            $("#puntosFuertes").mouseleave(function(){
+                                 $("h1").css("text-align", "left");
+                            });
+
+
+
+
+                            
 
                         });
         </script>
