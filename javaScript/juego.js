@@ -2218,4 +2218,47 @@ function comprobar_gemas_recogidas() {
    }
 
 }
+//JQUERY
+//Al entrar el ratón en el botón se hace más grande y cambia de color y al salir más pequeño y vuelve a cambiar de color
+$(document).ready(function(){
+
+$("button").mouseenter(function(){
+   // $("button").animate({Width: "+=5px"});
+    $(this).css("background-color", "blue");
+    $(this).css("width", "350px");
+  });
+
+  $("button").mouseleave(function(){
+  // $("button").animate({Width: "+=5px"});
+   $(this).css("background-color", "rgb(184, 179, 179)");
+   $(this).css("width", "210px");
+ });
+
+ $("#volverAtras").mouseenter(function(){
+  //  $("input").animate({letterSpacing: "+=5px"});
+    $(this).css("background-color", "blue");
+    $(this).css("width", "200px");
+  });
+
+  $("#volverAtras").mouseleave(function(){
+ //  $("input").animate({letterSpacing: "+=5px"});
+   $(this).css("background-color", "rgb(184, 179, 179)");
+   $(this).css("width", "100px");
+ });
+
+ $("#botonPause").mouseenter(function(){
+   //  $("input").animate({letterSpacing: "+=5px"});
+     $(this).css("background-color", "blue");
+     $(this).css("width", "200px");
+   });
+ 
+   $("#botonPause").mouseleave(function(){
+  //  $("input").animate({letterSpacing: "+=5px"});
+    $(this).css("background-color", "rgb(184, 179, 179)");
+    $(this).css("width", "100px");
+ 
+  });
+
+
+ });
 
