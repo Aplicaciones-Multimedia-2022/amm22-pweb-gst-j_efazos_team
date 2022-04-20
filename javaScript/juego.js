@@ -1887,7 +1887,7 @@ function jugar_nivel3() {
       contexto.fillText('has completado', 380, 375);
       contexto.fillText('el juego!', 510, 475);
 
-      const myTimeout = setTimeout(alerta, 6000);
+      const myTimeout = setTimeout(alerta, 3000);
 
       function alerta() {
          alert("Felicidades, has derrotado al enemigo final. Pulse 'Aceptar' para volver al menú principal");
