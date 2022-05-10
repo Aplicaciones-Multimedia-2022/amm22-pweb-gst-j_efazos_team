@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href="css/Multimedia.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.cdnfonts.com/css/sf-distant-galaxy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Raleway:wght@200&family=Smooch+Sans&family=Staatliches&family=Syne+Mono&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Raleway:wght@200&family=Smooch+Sans&family=Syne+Mono&display=swap" rel="stylesheet"> 
+    <title>gst-stream</title>
+  </head>
+  <body>
+    <h1 class="descripcionInicial">Multimedia </h1>
+
+    <p class="descripcion"> Para comenzar, dentro de la terminal debemos situarnos en el directorio en el cual se encuentre nuestro proyecto. 
+<br></br>
+Para ejecutar el pipeline, en 1º lugar lanzamos el servidor desde la linea de comandos con la siguiente línea: <br></br>
+	python -m SimpleHTTPServer 8080
+	<br></br>
+En 2º lugar ejecutamos en otra pestaña de la máquina de comandos lo siguiente: <br></br>gst-launch-1.0 filesrc location=Hulk.mp4 ! qtdemux name=demux demux.audio_0 !  queue ! decodebin ! audioconvert ! audioresample! autoaudiosink demux.video_0 ! queue ! decodebin ! videoconvert ! textoverlay text='J_efazos Team Multimedia' ! theoraenc ! queue ! m. oggmux name=m ! queue ! tcpserversink host=127.0.0.1 port=9090<br></br>
+Al recargar la página podrá visualizar el contenido multimedia.
+	</p>
+    <video class="video" width="400" height="400" autoplay>
+      <source src="http://localhost:9090">
+    </video>
+    <input type="button" class="volverAtras" id="volverAtras" value="Atrás" onclick="history.back()">
+  </body>
+</html>

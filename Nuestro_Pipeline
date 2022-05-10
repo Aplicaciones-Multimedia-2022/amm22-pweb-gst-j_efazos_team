@@ -1,0 +1,1 @@
+gst-launch-1.0 filesrc location=Hulk.mp4 ! qtdemux name=demux demux.audio_0 !  queue ! decodebin ! audioconvert ! audioresample! autoaudiosink demux.video_0 ! queue ! decodebin ! videoconvert ! textoverlay text='J_efazos Team Multimedia' ! theoraenc ! queue ! m. oggmux name=m ! queue ! tcpserversink host=127.0.0.1 port=9090
