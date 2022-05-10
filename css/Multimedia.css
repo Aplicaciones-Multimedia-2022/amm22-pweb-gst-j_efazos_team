@@ -1,0 +1,75 @@
+* { /*En primer lugar damos unas dimensiones generales a nuestra htmk*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Smooch Sans', sans-serif;
+    font-size: 20px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+
+
+
+.descripcion{
+    color: rgb(213, 213, 213);
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.descripcionInicial {
+    font-family: 'SF Distant Galaxy', sans-serif;
+    font-style: italic;
+    src: url('http://fonts.cdnfonts.com/css/sf-distant-galaxy');
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 252, 252);
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+.video{
+    margin-left: 200px;
+
+}
+
+
+
+body {
+	padding: 5%; /*Para que el contenido no esté totalmente pegado a la esquina*/
+    background-image: url("Fondos/pi.webp");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    cursor: url(Cursor/guante1.png),pointer;
+}
+
+
+
+
+.volverAtras {
+    background-color: rgb(184, 179, 179);
+    border-width: 3px;
+    border-color: black;
+    font-size: 20px;
+    font-family: 'SF Distant Galaxy', sans-serif;
+    cursor: url(Cursor/guante2.png),pointer;
+}
+
+.volverAtras {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    font-size: 20px;
+    cursor: url(Cursor/guante2.png),pointer;
+}
+
+.volverAtras:hover {
+    background-color: rgb(255, 255, 255);
+    border-width: 3px;
+    border-color: black;
+    font-size: 21px;
+    font-family: 'SF Distant Galaxy', sans-serif;
+    cursor: url(Cursor/guante2.png),pointer;
+}
+
